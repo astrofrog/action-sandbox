@@ -1,0 +1,10 @@
+name: 'Release Python package'
+description: 'Build wheels and sdist and upload to PyPI'
+runs:
+  using: "composite"
+  steps:
+    - name: Build wheels
+      uses: pypa/cibuildwheel@v2.3.1
+    - uses: actions/upload-artifact@v2
+      with:
+        path: ./wheelhouse/*.whl
