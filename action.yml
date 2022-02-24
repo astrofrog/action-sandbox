@@ -45,6 +45,6 @@ runs:
 
   - name: Test source distribution
     shell: bash
-    run: {{ inputs.test_command }}
+    run: ${{ inputs.test_command }}
     if: ${{ inputs.test_command != '' }}
     working-directory: ${{ runner.temp }}
