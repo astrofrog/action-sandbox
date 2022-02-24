@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: foo
-        uses: astrofrog/action-sandbox@v2
+        uses: astrofrog/action-sandbox
         with:
           test_command: pytest --pyargs test_package
