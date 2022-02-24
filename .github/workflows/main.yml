@@ -10,5 +10,6 @@ jobs:
       - id: foo
         uses: astrofrog/action-sandbox@main
         with:
+          pure_python_wheel: true
           test_extras: test
           test_command: pytest --pyargs test_package
